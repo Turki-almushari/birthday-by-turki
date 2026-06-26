@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fajer Final Boss 🎂</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<audio id="music" loop>
+  <source src="song.mp3" type="audio/mp3">
+</audio>
+
+<div id="hearts"></div>
+<div id="confetti"></div>
+<div id="heartForm"></div>
+
+<!-- INTRO -->
+<section class="page active" id="intro">
+  <div class="intro">
+    <h1>Fajer</h1>
+    <p>A story made for you 💖</p>
+    <button id="start">Begin</button>
+  </div>
+</section>
+
+<!-- COUNTER -->
+<section class="page" id="counter">
+  <h2>Since 01/01/2024 ❤️</h2>
+
+  <div class="box">
+    <div><span id="d">0</span>Days</div>
+    <div><span id="h">0</span>Hours</div>
+    <div><span id="m">0</span>Min</div>
+    <div><span id="s">0</span>Sec</div>
+  </div>
+
+  <img src="photo.jpg" class="photo">
+
+  <button id="next">Continue</button>
+</section>
+
+<!-- QUESTION -->
+<section class="page" id="question">
+  <h2>تحبني؟ ❤️</h2>
+
+  <div class="btns">
+    <button id="yes">إي</button>
+    <button id="no">لا</button>
+  </div>
+</section>
+
+<!-- CAKE -->
+<section class="page" id="cake">
+  <h2>تمنى أمنية ✨</h2>
+
+  <div class="cake"></div>
+
+  <button id="blow">Blow 🎂</button>
+
+  <h3 id="love">أحبك حيل ❤️</h3>
+
+  <button id="secret">🎁 Secret</button>
+</section>
+
+<!-- LETTER -->
+<section class="page" id="letter">
+  <div class="letter">
+    <p id="type"></p>
+  </div>
+
+  <button id="restart">Restart 🔁</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

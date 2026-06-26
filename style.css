@@ -1,0 +1,97 @@
+body{
+margin:0;
+font-family:Arial;
+background:radial-gradient(circle,#ffb6d9,#ff4fa0,#ff2d7d);
+overflow-x:hidden;
+color:white;
+}
+
+/* pages */
+.page{
+display:none;
+height:100vh;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+}
+
+.page.active{display:flex;}
+
+/* intro */
+.intro{
+padding:40px;
+background:rgba(255,255,255,0.15);
+border-radius:20px;
+backdrop-filter:blur(10px);
+}
+
+/* buttons */
+button{
+padding:14px 28px;
+border:none;
+border-radius:25px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{transform:scale(1.05);}
+
+/* hearts */
+#hearts .heart{
+position:fixed;
+width:16px;
+height:16px;
+background:#ff2d7d;
+transform:rotate(45deg);
+animation:float 6s linear infinite;
+}
+
+@keyframes float{
+from{transform:translateY(100vh) rotate(45deg);}
+to{transform:translateY(-10vh) rotate(45deg);}
+}
+
+/* heart formation */
+#heartForm{
+position:fixed;
+width:100%;
+height:100%;
+pointer-events:none;
+}
+
+/* counter */
+.box{
+display:flex;
+gap:10px;
+}
+
+.box div{
+background:white;
+color:#ff2d7d;
+padding:15px;
+border-radius:15px;
+}
+
+/* photo */
+.photo{
+width:200px;
+border-radius:20px;
+box-shadow:0 10px 40px rgba(0,0,0,0.3);
+}
+
+/* cake */
+.cake{
+width:200px;
+height:120px;
+background:#ff4fa0;
+border-radius:20px;
+}
+
+/* love */
+#love{
+opacity:0;
+transition:1s;
+}
+
+#love.show{opacity:1;}
